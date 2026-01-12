@@ -1,0 +1,22 @@
+export const wardCoordinates: Record<string, [number, number]> = {
+  'Chandni Chowk': [28.6505, 77.2303],
+  'Nehru Place': [28.5492, 77.2518],
+  'Karol Bagh': [28.6528, 77.1906],
+  'ITO': [28.6291, 77.2435],
+  'Rajouri Garden': [28.6436, 77.1189],
+  'Lajpat Nagar': [28.5695, 77.2415],
+  'Pitampura': [28.6990, 77.1384],
+  'Shahdara': [28.6738, 77.2837],
+  'Rohini': [28.7165, 77.1160],
+  'Dwarka': [28.5921, 77.0460],
+  'Connaught Place': [28.6304, 77.2177],
+  'Vasant Kunj': [28.5293, 77.1484],
+  'Hauz Khas': [28.5494, 77.2001],
+  'Saket': [28.5244, 77.2181],
+  'Okhla': [28.5555, 77.2847],
+  'Janakpuri': [28.6219, 77.0878],
+  'Laxmi Nagar': [28.6353, 77.2783],
+  'Model Town': [28.7026, 77.1938],
+  'Punjabi Bagh': [28.6692, 77.1306],
+  'Mayur Vihar': [28.6057, 77.2936]
+};

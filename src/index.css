@@ -1,0 +1,149 @@
+/* ===================== ROOT HEIGHT FIX (MANDATORY) ===================== */
+html, body, #root {
+  height: 100%;
+}
+
+/* ===================== GOOGLE FONTS ===================== */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap');
+
+/* ===================== TAILWIND ===================== */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+h1, h2, h3 {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  letter-spacing: -0.02em;
+}
+/* ===================== BASE VARIABLES ===================== */
+@layer base {
+  :root {
+    --background: 222 47% 6%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
+
+    --primary: 190 100% 50%;
+    --primary-foreground: 222 47% 6%;
+
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 55%;
+
+    --accent: 200 100% 55%;
+    --accent-foreground: 222 47% 6%;
+
+    --destructive: 0 84% 60%;
+    --border: 217 33% 17%;
+    --ring: 190 100% 50%;
+
+    --radius: 0.75rem;
+
+    /* Lovable gradients */
+    --gradient-text: linear-gradient(135deg, hsl(180 100% 60%), hsl(220 100% 70%));
+    --gradient-mesh:
+      radial-gradient(at 40% 20%, hsl(190 100% 50% / 0.12), transparent 50%),
+      radial-gradient(at 80% 0%, hsl(220 100% 60% / 0.1), transparent 50%),
+      radial-gradient(at 0% 50%, hsl(200 100% 55% / 0.08), transparent 50%);
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* ===================== COMPONENTS ===================== */
+@layer components {
+
+  /* Glass cards */
+  .glass-card {
+    background: hsl(222 47% 8% / 0.6);
+    backdrop-filter: blur(20px);
+    border: 1px solid hsl(217 33% 17%);
+    border-radius: 1rem;
+  }
+
+  .glass-card-hover {
+    transition: all 0.3s ease;
+  }
+
+  .glass-card-hover:hover {
+    border-color: hsl(190 100% 50% / 0.4);
+    transform: translateY(-4px);
+  }
+
+  /* Lovable hero styles */
+  .text-gradient {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .hero-overlay {
+    background: linear-gradient(
+      180deg,
+      hsl(222 47% 6% / 0.6),
+      hsl(222 47% 6% / 0.95)
+    );
+  }
+
+  .mesh-gradient {
+    background: var(--gradient-mesh);
+  }
+
+  /* Floating orbs */
+  .floating-orb {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.4;
+    animation: float 20s ease-in-out infinite;
+  }
+
+  .floating-orb-1 {
+    width: 600px;
+    height: 600px;
+    background: hsl(190 100% 50% / 0.15);
+    top: -200px;
+    right: -100px;
+  }
+
+  .floating-orb-2 {
+    width: 400px;
+    height: 400px;
+    background: hsl(220 100% 60% / 0.12);
+    bottom: 100px;
+    left: -100px;
+  }
+
+  .floating-orb-3 {
+    width: 300px;
+    height: 300px;
+    background: hsl(200 100% 55% / 0.1);
+    top: 40%;
+    right: 20%;
+  }
+}
+
+/* ===================== UTILITIES ===================== */
+@layer utilities {
+  @keyframes float {
+    0%, 100% { transform: translate(0,0) scale(1); }
+    25% { transform: translate(30px,-30px) scale(1.05); }
+    50% { transform: translate(-20px,20px) scale(0.95); }
+    75% { transform: translate(-30px,-20px) scale(1.02); }
+  }
+}
