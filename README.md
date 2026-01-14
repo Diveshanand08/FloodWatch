@@ -1,71 +1,117 @@
+FloodWatch addresses these challenges by providing a ward-level, AI-driven flood monitoring and early warning system that combines real-time data, historical analysis, and intelligent risk assessment.
 
+The platform enables authorities and stakeholders to:
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Detect flood risks early
 
-## How can I edit this code?
+Monitor rainfall trends in real time
 
-There are several ways of editing your application.
+Identify vulnerable wards
 
-**Use Lovable**
+Take data-driven preventive actions
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+Core Features
+1. Ward-Level Flood Risk Assessment
 
-Changes made via Lovable will be committed automatically to this repo.
+Each ward is assigned a flood risk score
 
-**Use your preferred IDE**
+Risk levels categorized as Safe, Warning, or Critical
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Helps prioritize response and resource allocation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. Real-Time Rainfall Monitoring
 
-Follow these steps:
+Live rainfall data ingestion
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Zone-wise and ward-wise rainfall comparison
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Detection of sudden rainfall spikes
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Historical Trend & Anomaly Detection
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Analyzes historical rainfall patterns
 
-**Edit a file directly in GitHub**
+Detects abnormal deviations from normal trends
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Flags potential flood-triggering events
 
-**Use GitHub Codespaces**
+4. Interactive Flood Map
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+Color-coded ward map visualization
 
-## What technologies are used for this project?
+Clickable wards with detailed insights:
 
-This project is built with:
+Rainfall intensity
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Risk level
 
-## How can I deploy this project?
+Historical comparison
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+5. Automated Ward Reports
 
-## Can I connect a custom domain to my Lovable project?
+Generates ward-level flood assessment reports
 
-Yes, you can!
+Includes rainfall statistics, risk classification, and recommendations
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Useful for officials and disaster response teams
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Tech Stack
+Frontend
+
+React.js
+
+TypeScript
+
+Tailwind CSS
+
+Recharts (data visualization)
+
+Leaflet / Custom Map Components
+
+Backend & Data Processing
+
+Node.js / Serverless APIs
+
+Python for data analytics
+
+Time-series data handling
+
+Visualization & Analytics
+
+Rainfall trend analysis
+
+Threshold-based risk classification
+
+Ward and zone-level aggregation
+
+System Workflow
+
+Rainfall data is collected from data sources
+
+Data is processed and aggregated at ward level
+
+Historical trends are analyzed
+
+Flood risk scores are calculated
+
+Results are visualized on dashboards and maps
+
+Alerts and reports are generated
+
+Use Cases
+
+Municipal Corporations
+
+Disaster Management Authorities
+
+Smart City Initiatives
+
+Urban Planners
+
+Researchers and Analysts
+
+Author
+
+Divesh Anand
+B.Tech Computer Science, DTU
+Interests: AI • Civic Tech • Data Systems • Smart Cities
