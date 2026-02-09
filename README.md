@@ -110,8 +110,3 @@ Urban Planners
 
 Researchers and Analysts
 
-Author
-
-Divesh Anand
-B.Tech Computer Science, DTU
-Interests: AI • Civic Tech • Data Systems • Smart Cities
