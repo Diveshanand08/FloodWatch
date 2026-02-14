@@ -23,7 +23,7 @@ export default function DelhiMap({
   return (
     <div
       style={{
-        height: '360px',   // 🔥 FIXED HEIGHT (NOT %)
+        height: '360px',   //  FIXED HEIGHT (NOT %)
         width: '100%',
         position: 'relative',
       }}
